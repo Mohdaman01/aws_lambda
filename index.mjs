@@ -18,9 +18,7 @@ export const handler = async (event) => {
         const feeheads = await db.collection("feeheads").find().toArray();
         
         const payments = await db.collection("payments").find().toArray();
-        
-        const students = await db.collection("students").find().toArray();
-        
+                
         const dues = [];
          
         feeheads.forEach((feehead) =>{
